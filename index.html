@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas id="myCanvas" width="500px" height="200px" style="border:1px solid grey"></canvas>
+    <div>
+      <label>y=f(x):</label>
+      <input id="function" type="text">
+    </div>
+    <div>
+      <label>x.min:</label>
+      <input id="xMin" type="number" value="0">
+    </div>
+    <div>
+      <label>x.max:</label>
+      <input id="xMax" type="number" value="0">
+    </div>
+    <button id="draw_plot">Plot it!</button>
+    <script type="module">
+      import { IndexPage } from './indexPage.js'
+      new IndexPage()
+    </script>
+  </body>
+</html>
